@@ -1,0 +1,454 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Tahoma;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(191, 78%, 68%, 0.26), hsla(192, 68%, 41%, 0.675)), url(../images/bg1.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, hsla(191, 78%, 68%, 0.26), hsla(192, 68%, 41%, 0.675)), url(../images/bg1.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{ 
+    text-align: center;
+    padding: 30px 50px 0 0;
+}
+
+nav > a {
+    color:white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.textos-header h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*ABOUT US*/
+
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly
+    
+}
+
+.imagen-about-us {
+    width: 45%;
+}
+
+.sobre-nosotros .contenido-textos {
+    width: 48%;
+}
+
+.contenido-textos h2 {
+    margin-bottom: 15px;
+}
+
+.contenido-textos h2 span {
+    background: #85b9c5;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p {
+    padding: 20px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/*CARACTERÍSTICAS TÉCNICAS Y GENERALES*/
+
+.portafolio {
+    background: #f2f2f2;
+}
+
+.galeria-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port {
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(201, 56%, 35%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img {
+    width: 40px;
+}
+
+.hover-galeria h3 {
+    color: white;
+}
+
+.hover-galeria p {
+    color: white;
+    text-align: justify;
+    padding: 20px;
+}
+
+.imagen-port:hover .hover-galeria {
+    transform: scale(1);
+}
+
+/*GESTOR DE ARRANQUE GNU GRUB*/
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.titulo-definicion {
+    margin-bottom: 30px;
+}
+
+.cards .card {
+    background:hsla(192, 68%, 41%, 0.675);
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card {
+    width: 60%;
+    color: white;
+}
+
+.cards .card > .contenido-texto-card p {
+    font-weight: 300;
+    padding: 5px;
+    text-align: justify;
+}
+
+/*SISTEMAS DE ARCHIVOS QUE ADMINISTRA*/
+
+.about-services {
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+.servicio-cont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.servicio-ind {
+    width: 28%;
+    text-align: justify;
+}
+
+.servicio-ind img {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*APLICACIONES DEL SISTEMA EN LA INDUSTRIA*/
+
+.aplicaciones-del-sistema {
+    display: flex;
+    justify-content: space-evenly
+}
+
+
+.imagen-aplicacion {
+    width: 30%;
+}
+
+.aplicaciones-del-sistema .contenido-textos-aplicaciones {
+    width: 48%;
+}
+
+.contenido-textos-aplicaciones h2 {
+    margin-bottom: 15px;
+}
+
+.contenido-textos-aplicaciones h2 span {
+    background: #85b9c5;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos-aplicaciones p {
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+/*VERSIONES*/
+
+.content-versions {
+    background: #f2f2f2;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly
+}
+
+.contenedor-versions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 10px; 
+  }
+  
+  .item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .contenedor-versions img {
+    margin-right: 100px;
+    width: 200px;
+  }
+
+  /*INTERFACES*/
+  .content-interfaces .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .content-interfaces img {
+    margin-top: 50px;
+    width: 500px; 
+    height: auto;
+    margin-bottom: 25px; 
+  }
+
+
+  .content-interfaces h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .content-interfaces p {
+    font-size: 16px;
+    color: #555;
+    padding: 50px;
+    text-align: justify;
+  }
+  
+
+/*FOOTER*/
+
+footer {
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo {
+    text-align: center;
+}
+
+.content-foo h4 {
+    color: white;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p {
+    color: #ccc;
+}
+
+.titulo-final {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0 ;
+    color: #f2f2f2;
+}
+
+/**/
+
+@media screen and (max-width:900px) {
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos {
+        width: 90%;
+    }
+
+    .imagen-about-us {
+        width: 90%;
+    }
+
+    /*GALERIA*/
+    .imagen-port {
+        width: 44%;
+    }
+
+    /*CLIENTES*/
+
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card {
+        width: 90%;
+    }
+
+    .cards .card:first-child {
+        margin-bottom: 30px;
+    }
+
+
+    /*SERVICIOS*/
+    .servicio-cont {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind {
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img {
+        width: 90%;
+    }
+
+    /*Minuto 23:50*/
+}
